@@ -27,20 +27,26 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas matplotlib jupyter nbconvert
 
-      - name: Execute notebook & export PNG
+      - name: Create output directory
+        run: mkdir -p infographics
+
+      - name: Execute notebook & export HTML
         run: |
+          # Execute and overwrite a copy under notebooks/
           jupyter nbconvert \
             --to notebook \
             --execute notebooks/fintech_funding_overview.ipynb \
-            --output executed.ipynb
+            --output notebooks/executed.ipynb
 
+          # Convert that executed notebook to HTML in infographics/
           jupyter nbconvert \
-            executed.ipynb --to html
+            notebooks/executed.ipynb --to html \
+            --output infographics/fintech_funding_overview.html
 
       - name: Commit infographic
         uses: EndBug/add-and-commit@v9
         with:
-          add: '*.html'
+          add: 'infographics/*.html'
           message: 'Auto-update infographic'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
