@@ -1,25 +1,47 @@
-     - name: Execute notebooks & export PNGs
-       run: |
--        jupyter nbconvert \
--          --to qtpng \
--          --execute notebooks/fintech_funding_overview.ipynb \
--          --output fintech_funding_overview.png \
--          --output-dir infographics
--
--        jupyter nbconvert \
--          --to qtpng \
--          --execute notebooks/treasury_cash_balances_heatmap.ipynb \
--          --output treasury_cash_balances_heatmap.png \
--          --output-dir infographics
-+        jupyter nbconvert \
-+          --to qtpng \
-+          --execute notebooks/fintech_funding_overview.ipynb \
-+          --output fintech_funding_overview.png \
-+          --output-dir infographics
-+
-+        jupyter nbconvert \
-+          --to qtpng \
-+          --execute notebooks/treasury_cash_balances_heatmap.ipynb \
-+          --output treasury_cash_balances_heatmap.png \
-+          --output-dir infographics
+name: Build Infographics
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install nbconvert[qtpng] ipykernel
+
+      - name: Execute notebooks & export PNGs
+        run: |
+          jupyter nbconvert \
+            --to qtpng \
+            --execute notebooks/fintech_funding_overview.ipynb \
+            --output fintech_funding_overview.png \
+            --output-dir infographics
+
+          jupyter nbconvert \
+            --to qtpng \
+            --execute notebooks/treasury_cash_balances_heatmap.ipynb \
+            --output treasury_cash_balances_heatmap.png \
+            --output-dir infographics
+
+      - name: Commit generated images
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add infographics/*.png
+          git commit -m "Auto-generate infographics" || echo "No changes to commit"
+          git push
 
