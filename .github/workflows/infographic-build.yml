@@ -27,40 +27,26 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas matplotlib jupyter nbconvert
 
-      - name: Prepare infographics folder
-        run: mkdir -p infographics
-
-      # Fintech funding overview infographic
-      - name: Run & export fintech funding overview
+      - name: Generate Fintech PNG
         run: |
           jupyter nbconvert \
-            --to notebook \
+            --to png \
             --execute notebooks/fintech_funding_overview.ipynb \
-            --output notebooks/fintech_funding_overview.executed.ipynb
+            --output fintech_funding_overview.png \
+            --output-dir infographics
 
-          jupyter nbconvert \
-            notebooks/fintech_funding_overview.executed.ipynb \
-            --to html \
-            --output infographics/fintech_funding_overview.html
-
-      # Treasury cash balances heatmap infographic
-      - name: Run & export treasury cash balances heatmap
+      - name: Generate Treasury PNG
         run: |
           jupyter nbconvert \
-            --to notebook \
+            --to png \
             --execute notebooks/treasury_cash_balances_heatmap.ipynb \
-            --output notebooks/treasury_cash_balances_heatmap.executed.ipynb
+            --output treasury_cash_balances_heatmap.png \
+            --output-dir infographics
 
-          jupyter nbconvert \
-            notebooks/treasury_cash_balances_heatmap.executed.ipynb \
-            --to html \
-            --output infographics/treasury_cash_balances_heatmap.html
-
-      - name: Commit updated infographics
+      - name: Commit infographic PNGs
         uses: EndBug/add-and-commit@v9
         with:
-          add: 'infographics/*.html'
-          message: 'Auto-update infographics'
+          add: 'infographics/*.png'
+          message: 'Auto-update infographic PNGs'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
