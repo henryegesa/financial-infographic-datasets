@@ -1,0 +1,109 @@
+Quarter,Region,SubSector,Funding_MUSD
+2022Q1,North America,Payments,371
+2022Q1,North America,Lending,132
+2022Q1,North America,WealthTech,314
+2022Q1,Europe,Payments,201
+2022Q1,Europe,Lending,381
+2022Q1,Europe,WealthTech,149
+2022Q1,Asia-Pac,Payments,271
+2022Q1,Asia-Pac,Lending,246
+2022Q1,Asia-Pac,WealthTech,144
+2022Q2,North America,Payments,360
+2022Q2,North America,Lending,97
+2022Q2,North America,WealthTech,235
+2022Q2,Europe,Payments,272
+2022Q2,Europe,Lending,94
+2022Q2,Europe,WealthTech,237
+2022Q2,Asia-Pac,Payments,54
+2022Q2,Asia-Pac,Lending,198
+2022Q2,Asia-Pac,WealthTech,179
+2022Q3,North America,Payments,56
+2022Q3,North America,Lending,359
+2022Q3,North America,WealthTech,295
+2022Q3,Europe,Payments,193
+2022Q3,Europe,Lending,395
+2022Q3,Europe,WealthTech,99
+2022Q3,Asia-Pac,Payments,179
+2022Q3,Asia-Pac,Lending,355
+2022Q3,Asia-Pac,WealthTech,126
+2022Q4,North America,Payments,184
+2022Q4,North America,Lending,239
+2022Q4,North America,WealthTech,146
+2022Q4,Europe,Payments,160
+2022Q4,Europe,Lending,76
+2022Q4,Europe,WealthTech,237
+2022Q4,Asia-Pac,Payments,339
+2022Q4,Asia-Pac,Lending,250
+2022Q4,Asia-Pac,WealthTech,287
+2023Q1,North America,Payments,60
+2023Q1,North America,Lending,152
+2023Q1,North America,WealthTech,101
+2023Q1,Europe,Payments,304
+2023Q1,Europe,Lending,359
+2023Q1,Europe,WealthTech,334
+2023Q1,Asia-Pac,Payments,71
+2023Q1,Asia-Pac,Lending,164
+2023Q1,Asia-Pac,WealthTech,295
+2023Q2,North America,Payments,95
+2023Q2,North America,Lending,281
+2023Q2,North America,WealthTech,326
+2023Q2,Europe,Payments,50
+2023Q2,Europe,Lending,90
+2023Q2,Europe,WealthTech,370
+2023Q2,Asia-Pac,Payments,363
+2023Q2,Asia-Pac,Lending,276
+2023Q2,Asia-Pac,WealthTech,355
+2023Q3,North America,Payments,312
+2023Q3,North America,Lending,223
+2023Q3,North America,WealthTech,190
+2023Q3,Europe,Payments,150
+2023Q3,Europe,Lending,198
+2023Q3,Europe,WealthTech,328
+2023Q3,Asia-Pac,Payments,326
+2023Q3,Asia-Pac,Lending,211
+2023Q3,Asia-Pac,WealthTech,279
+2023Q4,North America,Payments,105
+2023Q4,North America,Lending,114
+2023Q4,North America,WealthTech,378
+2023Q4,Europe,Payments,93
+2023Q4,Europe,Lending,353
+2023Q4,Europe,WealthTech,363
+2023Q4,Asia-Pac,Payments,303
+2023Q4,Asia-Pac,Lending,177
+2023Q4,Asia-Pac,WealthTech,267
+2024Q1,North America,Payments,70
+2024Q1,North America,Lending,60
+2024Q1,North America,WealthTech,282
+2024Q1,Europe,Payments,114
+2024Q1,Europe,Lending,289
+2024Q1,Europe,WealthTech,170
+2024Q1,Asia-Pac,Payments,165
+2024Q1,Asia-Pac,Lending,185
+2024Q1,Asia-Pac,WealthTech,63
+2024Q2,North America,Payments,89
+2024Q2,North America,Lending,216
+2024Q2,North America,WealthTech,199
+2024Q2,Europe,Payments,205
+2024Q2,Europe,Lending,351
+2024Q2,Europe,WealthTech,186
+2024Q2,Asia-Pac,Payments,300
+2024Q2,Asia-Pac,Lending,227
+2024Q2,Asia-Pac,WealthTech,355
+2024Q3,North America,Payments,301
+2024Q3,North America,Lending,273
+2024Q3,North America,WealthTech,254
+2024Q3,Europe,Payments,325
+2024Q3,Europe,Lending,125
+2024Q3,Europe,WealthTech,224
+2024Q3,Asia-Pac,Payments,261
+2024Q3,Asia-Pac,Lending,158
+2024Q3,Asia-Pac,WealthTech,172
+2024Q4,North America,Payments,334
+2024Q4,North America,Lending,67
+2024Q4,North America,WealthTech,111
+2024Q4,Europe,Payments,76
+2024Q4,Europe,Lending,105
+2024Q4,Europe,WealthTech,209
+2024Q4,Asia-Pac,Payments,162
+2024Q4,Asia-Pac,Lending,170
+2024Q4,Asia-Pac,WealthTech,324

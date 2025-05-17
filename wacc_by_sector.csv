@@ -1,0 +1,10 @@
+Sector,Region,WACC_pct
+Tech,US,7.5
+Tech,EU,9.1
+Tech,APAC,6.27
+Industrials,US,7.58
+Industrials,EU,6.97
+Industrials,APAC,6.91
+Healthcare,US,9.29
+Healthcare,EU,9.97
+Healthcare,APAC,10.14
