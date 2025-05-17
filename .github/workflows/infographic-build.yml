@@ -1,13 +1,13 @@
      - name: Execute notebooks & export PNGs
        run: |
 -        jupyter nbconvert \
--          --to png \
+-          --to qtpng \
 -          --execute notebooks/fintech_funding_overview.ipynb \
 -          --output fintech_funding_overview.png \
 -          --output-dir infographics
 -
 -        jupyter nbconvert \
--          --to png \
+-          --to qtpng \
 -          --execute notebooks/treasury_cash_balances_heatmap.ipynb \
 -          --output treasury_cash_balances_heatmap.png \
 -          --output-dir infographics
