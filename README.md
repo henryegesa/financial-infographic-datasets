@@ -1,35 +1,36 @@
-# Financial Infographic Datasets
+# 📊 Financial Infographic Datasets
 
-Public, synthetic sample datasets for prototyping fintech, treasury, and 
-corporate-finance infographics.
+[![Build Infographics](https://github.com/henryegesa/financial-infographic-datasets/actions/workflows/infographic-build.yml/badge.svg)](https://github.com/henryegesa/financial-infographic-datasets/actions/workflows/infographic-build.yml)
+[![License: MIT](https://img.shields.io/github/license/henryegesa/financial-infographic-datasets)](LICENSE)
+[![Datasets](https://img.shields.io/badge/datasets-6-blue.svg)](#datasets)
+[![Python](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/)
 
-## Contents
+---
 
-| File | Description | Rows |
-|------|-------------|------|
-| `fintech_funding_trends.csv` | Quarterly VC funding (2022 Q1 – 2024 Q4) 
-by region and subsector. | 81 |
-| `bnpl_revenue_by_provider.csv` | Annual BNPL revenue 2020-2024 for 
-Affirm, Klarna, Afterpay. | 15 |
-| `corporate_cash_balances.xlsx` | Year-end cash (USD bn) 2020-2024 for 
-Apple, Microsoft, Alphabet, Amazon. | 24 |
-| `working_capital_index.xlsx` | DSO, DPO, CCC 2020-2024 for Tech, 
-Industrials, Healthcare. | 18 |
-| `wacc_by_sector.csv` | Latest WACC % for Tech, Industrials, Healthcare 
-split by US, EU, APAC. | 9 |
-| `roic_margins_by_industry.csv` | ROIC % and Net-margin % snapshot for 
-the same sectors. | 3 |
+## 🚀 Sample Infographic
 
-> **Note:** These numbers are illustrative; replace with sourced data for 
-production infographics.
+![Fintech Funding Overview](infographics/fintech_funding_overview.png){:style="max-width:600px; border:1px solid #ddd; border-radius:4px;"}
 
-## Usage
+> **Tip:** If you don’t yet have `fintech_funding_overview.png`, run:
+> ```bash
+> jupyter nbconvert \
+>   --to png \
+>   --execute notebooks/fintech_funding_overview.ipynb \
+>   --output fintech_funding_overview.png \
+>   --output-dir infographics
+> ```
 
-1. Clone or download this repo  
-2. Load the CSV/XLSX files into Python, R, or your BI tool  
-3. Build charts / infographics (examples coming soon)
+---
 
-## License
+## 📂 Datasets
 
-*To be added in the next step (MIT or CC-BY suggested).*
+| File                                  | Description                              | Format |
+|---------------------------------------|------------------------------------------|--------|
+| `fintech_funding_trends.csv`          | Quarterly funding by fintech sub-sector  | CSV    |
+| `bnpl_revenue_by_provider.csv`        | Revenue split among BNPL providers       | CSV    |
+| `corporate_cash_balances.xlsx`        | Top 200 corporates’ cash positions       | XLSX   |
+| `working_capital_index.xlsx`          | Working capital index across industries  | XLSX   |
+| `wacc_by_sector.csv`                  | Sector-level WACC metrics                | CSV    |
+| `roic_margins_by_industry.csv`        | ROIC margins by industry                 | CSV    |
 
+*Click the “Build Infographics” badge above to regenerate the HTML/PNG infographic whenever you update the data.*
