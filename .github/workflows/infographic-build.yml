@@ -44,4 +44,3 @@ jobs:
           git add infographics/*.png
           git commit -m "Auto-generate infographics" || echo "No changes to commit"
           git push
-
